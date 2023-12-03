@@ -1,0 +1,285 @@
+/* *{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.contain{
+    width: 845.91px;
+    height: 580.54px;
+    border: solid 1px #E0E0E0;
+    border-radius: 12px;
+    margin: 0 auto; 
+    position: relative;
+}
+.contain ul{
+    padding: 0;
+}
+.contain li{
+    list-style: none;
+    height: 82px;
+    width: 845.38px;
+    border:solid 1px #E0E0E0;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    position: relative;
+}
+.C_profile3 {
+    list-style: none;
+    height: 82px;
+    width: 845.38px;
+    border:solid 1px #E0E0E0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+li{ 
+    
+    padding-top: 31px;
+    color: #BDBDBD;
+    padding-left: 60px;
+}
+li p{
+    padding-left: 150px; ;
+    color: black;
+}
+.contain h2{
+    width: 69px;
+    height: 33px;
+    font-size: 24px;
+}
+.contain .l{
+    width: 463.25px;
+    height: 19.79px;
+    font-size: 13px;
+    color: #828282;
+}
+
+.refer {
+    font-size: 14px;
+    height: 19px;
+    color: #828282;
+    display: flex;
+    margin: 5px auto;
+    width: 845.91px;
+    justify-content: space-between;
+    margin-bottom: 3%;
+} */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+
+}
+
+header {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar-logo{
+  display: flex;
+  justify-content: space-between;
+} 
+
+
+.navbar-logo img {
+  margin: 1rem;
+  width: 160px;
+}
+
+.navbar-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-icon img {
+  width: 30px;
+  margin: 20px;
+}
+
+section {
+  text-align: center;
+}
+
+.personal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.personal h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.login-box {
+  background-color: #fff;
+  border-radius: 12px;
+  border: #d3d3d3;
+  padding: 30px 0px;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 845.91px;
+  height: 580.54px;
+  border: solid 1px #E0E0E0;
+}
+
+.profile {
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile>div {
+  flex-direction: column;
+}
+
+.profile>div>h1 {
+  margin: 0px 215px 0px 0px;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+.profile>div>p {
+  margin: 0px 53px 0px 0px;
+  font-size: 13px;
+  color: #828282;
+}
+
+.profile>a {
+  border: 1px gray solid;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin: 12px;
+  text-decoration: none;
+  color: #828282;
+}
+
+.profile_info {
+  height: 41px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #BDBDBD;
+  display: flex;
+  padding: 21px 30px;
+
+}
+
+.profile_info .prue {
+  color: #333333;
+  font-size: 18px;
+  position: absolute;
+  margin: 15px 180px;
+}
+
+.profile_info>div {
+  flex-direction: column;
+}
+
+.pl {
+  color: #828282;
+  font-size: 14px;
+
+}
+
+.out_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile_pic {
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 30px;
+  color: #BDBDBD;
+}
+
+.profile_pic .prue {
+  color: #333333;
+  font-size: 18px;
+  position: absolute;
+  margin: 15px 180px;
+}
+
+.last {
+  height: auto;
+  color: #BDBDBD;
+  display: flex;
+  padding: 20px 30px;
+}
+
+.last .prue {
+  color: #333333;
+  font-size: 18px;
+  position: absolute;
+  margin: 15px 180px;
+}
+
+/*///////////////////////////*/
+
+
+.buttonToggle {
+  height: 50px;
+  width: 165px;
+  border: none;
+  background-color: white;
+  margin-left: 40px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.menuToggle {
+  list-style: none;
+  width: 188px;
+  height: 174px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: none;
+  position: absolute;
+  padding-left: 0%;
+}
+
+.show {
+  display: block;
+}
+
+.limenu {
+  width: 164.12px;
+  height: 39.15px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 42px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  color: rgb(59, 59, 59);
+}
+
+.textOptions {
+  color: black;
+  margin-left: 15px;
+  position: absolute;
+  text-decoration: none;
+  top: 7px;
+}
+
+.proof {
+/*   top: 10px;
+ */  position: relative;
+}

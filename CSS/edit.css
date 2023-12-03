@@ -1,0 +1,95 @@
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 845.91px;
+    height: 827.56px;
+    border-radius: 12px;
+    border: solid 1px #E0E0E0;
+    padding-left: 40px;
+    margin: 4% auto;
+}
+
+.info h3 {
+    font-size: 24px;
+    height: 33px;
+    font-weight: 400;
+    /* letter-spacing: -0.035em; */
+
+}
+.info p{
+    
+font-size: 13px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.035em;
+}
+
+.data label,
+.data input {
+    display: block;
+    margin: 0;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.data label {
+    padding: 0;
+}
+
+.data input {
+    border: solid 1px #828282;
+    margin-bottom: 25px;
+}
+
+.data input:focus {
+    outline: none;
+    border: 1px solid #2F80ED;
+}
+
+.data button {
+    width: 82px;
+    height: 38px;
+    border-radius: 8px;
+    background: #2F80ED;
+    color: #FFFFFF;
+    border: none;
+}
+
+.bio {
+    width: 416.93px;
+    height: 91.58px;
+    border-radius: 12px;
+    border: 1px;
+}
+
+.email,
+.password,
+.phone,
+.name {
+    width: 416.93px;
+    height: 52px;
+    border-radius: 12px;
+    border: 1px
+}
+
+.img {
+
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    border: solid 1px;
+}
+
+.img-conte {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.img-conte p {
+    padding-top: 12px;
+    margin-left: 20px;
+}
