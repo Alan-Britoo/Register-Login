@@ -17,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $cone->fetch(PDO::FETCH_ASSOC);
         session_start();
         $_SESSION["array"] = $result;
-        header('location: ./profile.php');
+        header('location: ../Front/F_profile.php');
         exit();
     } catch (PDOException $e) {
         echo 'NO SE PUDO REGISTRAR EL USUARIO' . $e->getMessage();
-        header('location: F_register.php');
+        header('location:  ../Front/F_register.php');
     }
 }
 ?>

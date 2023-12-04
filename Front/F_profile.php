@@ -33,7 +33,7 @@ if (isset($_SESSION['array'])) {
                     <ul class="menuToggle" id="menuToggle">
                         <div class="proof">
                             <li class="limenu"><span class="material-symbols-outlined icons">person
-                                </span><a class="text-decoration-none textOptions" href="./profile.php">My
+                                </span><a class="text-decoration-none textOptions" href="./F_profile.php">My
                                     Profile</a></li>
                         </div>
 
@@ -45,7 +45,7 @@ if (isset($_SESSION['array'])) {
                         <div class="proof">
                             <li class="limenu"><span class="material-symbols-outlined icons"
                                     style="color:red">logout</span><a class="text-decoration-none textOptions"
-                                    style="color: red;" href="./logout.php">Logout</a></li>
+                                    style="color: red;" href="../Backend/logout.php">Logout</a></li>
                         </div>
                     </ul>
 
@@ -120,7 +120,7 @@ if (isset($_SESSION['array'])) {
         </div>
     </section>
 
-    <script src="js.js"></script>
+    <script src="../js.js"></script>
 </body>
 </div>
 

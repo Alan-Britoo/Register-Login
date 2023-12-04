@@ -14,10 +14,10 @@ try {
     if(password_verify($password,$result['contrasena'])){
         session_start();
         $_SESSION['array'] = $result;
-        header('location: ./profile.php');
+        header('location: ../Front/F_profile.php');
     }else{
         print_r( "datos ingresados incorrectos");
-        header('location: ./F_login.php');
+        header('location: ../Front/F_login.php');
     }
     
 } catch (PDOException $e) {
