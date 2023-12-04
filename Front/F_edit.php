@@ -29,6 +29,9 @@ if (isset($_SESSION["array"])) {
                 <div class="me-5 mt-3 dropdown">
                     <button class="buttonToggle" id="buttonToggle">nombre:
                         <?php echo $arrayP['name'] ?>
+                        <span>
+                            <img src="../MP_N3-master/assets/flecha.png" alt="">
+                        </span>
                     </button>
                     <ul class="menuToggle" id="menuToggle">
                         <div class="proof">
@@ -53,25 +56,30 @@ if (isset($_SESSION["array"])) {
             </nav>
         </a>
     </div>
-
+    <div class="back">
+        <a href="./F_profile.php" class="Backback">
+            < Back</a>
+    </div>
 
     <form action="../Backend/edit.php" method="POST" enctype="multipart/form-data">
         <div class="container">
             <div class="info">
                 <h3>Change Info</h3>
-                <p>lo que diga aqyi</p>
+                <p>Changes will be reflected to every services</p>
             </div>
             <div class="img-conte">
-                <label class="img">
-                    <?php if ($arrayP['photo'] != ''): ?>
-                        <img class="fotooo" src="<?php echo $arrayP['photo'] ?>" alt="IMAGEN">
-                    <?php endif; ?>
-                    <span class="material-symbols-outlined iconCamara centrar"> photo_camera </span>
-                </label>
+                
                 <div class="changePhoto">
                     <label class="changeTittle">
-                        <span class="textFoto">CHANGE FOTO</span>
+                        
                         <input type="file" name="foto" id="foto" class="subirFoto">
+                    <div class="containerf">
+                    <span class="material-symbols-outlined iconCamara centrar"> photo_camera </span>
+                        <span class="img" ><?php if ($arrayP['photo'] != ''): ?>
+                        <img class="fotooo" src="<?php echo $arrayP['photo'] ?>" alt="IMAGEN">
+                    <?php endif; ?> </span>
+                        <span class="textFoto">CHANGE FOTO</span>
+                    </div>
                     </label>
                 </div>
             </div>
@@ -90,15 +98,18 @@ if (isset($_SESSION["array"])) {
 
                 <label for="">Password</label>
                 <input name="contrasena" type="password" class="password"
-                    placeholder="<?php echo $arrayP['contrasena'] ?>" required>
+                    placeholder="<?php echo $arrayP['contrasena'] ?>" required >
 
                 <button>Save</button>
             </div>
         </div>
     </form>
     <script src="../js.js"></script>
+    <button class="boton-flotante" ><span class="material-symbols-outlined">
+brightness_5
+</span></button>
+    <script src="../js2.js"></script>
 
-    <input type="file" ><span class="material-symbols-outlined iconCamara centrar"> photo_camera </span>
 </body>
 
 </html>

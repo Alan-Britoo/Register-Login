@@ -1,8 +1,41 @@
 body {
-    border: 0;
-    padding: 0;
     margin: 0;
-}
+    font-family: Arial, sans-serif;
+    padding: 0;
+  
+  }
+  
+  header {
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo{
+    display: flex;
+    justify-content: space-between;
+  } 
+  
+  
+  .navbar-logo img {
+    
+    margin: 1rem;
+    width: 160px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logout-icon img {
+    width: 30px;
+    margin: 10px;
+  }
 
 .container {
     width: 845.91px;
@@ -10,7 +43,7 @@ body {
     border-radius: 12px;
     border: solid 1px #E0E0E0;
     padding-left: 40px;
-    margin: 4% auto;
+    margin: 2% auto;
 }
 
 .info h3 {
@@ -51,9 +84,11 @@ letter-spacing: -0.035em;
 }
 
 .centrar{
-    padding-left: 25px;
-    padding-top: 23px;
-    
+    position: absolute;
+    left: 25px;
+    top: 23px;
+    color: #828282;
+    align-items: center;
 }
 
 .data button {
@@ -83,11 +118,12 @@ letter-spacing: -0.035em;
 }
 
 .img {
-
+border: solid 1px gray;
     width: 72px;
     height: 72px;
     border-radius: 8px;
-    border: solid 1px;
+    display: inline-block;
+
 }
 .fotooo{
     border-radius: 8px;
@@ -160,3 +196,80 @@ letter-spacing: -0.035em;
   /*   top: 10px;
    */  position: relative;
   }
+
+  /* MODO NOCHE */
+body {
+    transition: background-color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+.modo-noche {
+    background-color: #2a2a2a; 
+    color: #ffffff; 
+}
+
+.modo-noche .pri{
+    color: #ffffff; 
+}
+.modo-noche .buttonToggle{
+    background-color: #2a2a2a; 
+  }
+  
+
+.boton-flotante {
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2D9CDB; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(122, 122, 122);
+}
+
+.boton-flotante:hover {
+    background-color: #2980b9; 
+}
+
+.changeTittle{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.subirFoto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.containerF{
+    position: relative;
+    align-items: center;
+    display: flex;
+    align-items: center;
+
+}
+.textFoto{
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.back{
+    display: flex;
+    
+    justify-content: center;
+}
+.Backback{
+    display: flex;
+    width: 845.91px;
+    margin-top: 30px;
+    text-decoration: none;
+}

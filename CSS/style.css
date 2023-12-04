@@ -116,3 +116,46 @@
     margin-bottom: 3%;
 
 }
+
+/* MODO NOCHE */
+body {
+    transition: background-color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+.modo-noche {
+    background-color: #2a2a2a; 
+    color: #ffffff; 
+}
+
+.modo-noche .pri{
+    color: #ffffff; 
+}
+.modo-noche .seg{
+    color: #ffffff; 
+}
+.modo-noche .email {
+    background-color: #333333; 
+}
+
+.modo-noche .contraseña {
+    background-color: #333333; 
+}
+
+.boton-flotante {
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2D9CDB; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(122, 122, 122);
+}
+
+.boton-flotante:hover {
+    background-color: #2980b9; 
+}

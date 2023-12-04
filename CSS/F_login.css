@@ -111,19 +111,29 @@
     margin-bottom: 3%;
 
 }
-
+/* MODO NOCHE */
 body {
     transition: background-color 0.5s;
     margin: 0;
     padding: 0;
 }
 .modo-noche {
-    background-color: #2a2a2a; /* Color de fondo para el modo nocturno */
-    color: #ffffff; /* Color del texto para el modo nocturno */
+    background-color: #2a2a2a; 
+    color: #ffffff; 
 }
 
 .modo-noche .pri{
-    color: #ffffff; /* Color del texto para el modo nocturno */
+    color: #ffffff; 
+}
+.modo-noche .seg{
+    color: #ffffff; 
+}
+.modo-noche .email {
+    background-color: #333333; 
+}
+
+.modo-noche .contraseña {
+    background-color: #333333; 
 }
 
 .boton-flotante {
@@ -131,8 +141,8 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #2D9CDB; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #2F80ED; 
+    color: #fff; 
     padding: 10px 20px;
     border: none;
     border-radius: 50%;
@@ -141,5 +151,5 @@ body {
 }
 
 .boton-flotante:hover {
-    background-color: #2980b9; /* Color de fondo del botón al pasar el ratón sobre él */
+    background-color: #2F80ED; 
 }

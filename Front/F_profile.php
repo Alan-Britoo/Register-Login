@@ -31,12 +31,14 @@ if (isset($_SESSION['array'])) {
                     <button class="buttonToggle" id="buttonToggle">
                         <?php if ($arrayP['photo'] != ''): ?>
                             <img class="fotooo" src="<?php echo $arrayP['photo'] ?>" alt="IMAGEN" ?>
-                            <p><?php echo $arrayP['name'] ?></p>
-                            
+                            <p>
+                                <?php echo $arrayP['name'] ?>
+                            </p>
+
                         <?php endif; ?>
-                        <span >
-                                <img src="../MP_N3-master/assets/flecha.png" alt="">
-                            </span>
+                        <span>
+                            <img src="../MP_N3-master/assets/flecha.png" alt="">
+                        </span>
                     </button>
 
                     <ul class="menuToggle" id="menuToggle">
@@ -79,7 +81,7 @@ if (isset($_SESSION['array'])) {
 
                 <div class="profile_pic">
                     <p>PHOTO</p>
-                    <p class="prue pruee" >
+                    <p class="prue pruee">
                         <!-- <p class="pruee" >Profile Photo</p> -->
                         <?php if ($arrayP['photo'] != ''): ?>
                         </p>
@@ -120,10 +122,11 @@ if (isset($_SESSION['array'])) {
 
                 <div class="last">
                     <p>PASSWORD</p>
-                    <input  type="password" class="prue" id="ocultar" value="<?php echo $arrayP['contrasena'] ?>" readonly>
-                        
-                        </input>
-                    
+                    <input type="password" class="prue" id="ocultar" value="<?php echo $arrayP['contrasena'] ?>"
+                        readonly>
+
+                    </input>
+
                 </div>
             </div>
 
@@ -135,6 +138,10 @@ if (isset($_SESSION['array'])) {
     </section>
 
     <script src="../js.js"></script>
+    <button class="boton-flotante"><span class="material-symbols-outlined">
+            brightness_5
+        </span></button>
+    <script src="../js2.js"></script>
 </body>
 </div>
 
