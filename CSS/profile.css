@@ -91,6 +91,7 @@ header {
 
 
 .navbar-logo img {
+  
   margin: 1rem;
   width: 160px;
 }
@@ -102,7 +103,7 @@ header {
 
 .logout-icon img {
   width: 30px;
-  margin: 20px;
+  margin: 10px;
 }
 
 section {
@@ -200,8 +201,8 @@ section {
 .profile_pic {
   border-bottom: 1px solid #e0e0e0;
   display: flex;
-  justify-content: space-between;
-  padding: 28px 30px;
+
+  padding: 16px 30px;
   color: #BDBDBD;
 }
 
@@ -211,6 +212,15 @@ section {
   position: absolute;
   margin: 15px 180px;
 }
+
+/* .pruee{
+  
+  margin-left: 120px;
+  border: solid 1px grey;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+} */
 
 .last {
   height: auto;
@@ -235,10 +245,13 @@ section {
   border: none;
   background-color: white;
   margin-left: 40px;
+  display: flex;
+    align-items: center;
 }
 
-.dropdown {
-  position: relative;
+.dropdown span{
+  text-decoration: none;
+  
 }
 
 .menuToggle {
@@ -251,6 +264,7 @@ section {
   display: none;
   position: absolute;
   padding-left: 0%;
+  margin-left: 50px;
 }
 
 .show {
@@ -258,11 +272,11 @@ section {
 }
 
 .limenu {
-  width: 164.12px;
+  width: 140px;
   height: 39.15px;
   font-size: 12px;
   margin-top: 15px;
-  margin-left: 42px;
+  margin-left: 30px;
 }
 
 .icons {
@@ -278,8 +292,27 @@ section {
   text-decoration: none;
   top: 7px;
 }
+.fotooo{
+  border: 1px solid grey;
+  border-radius: 6px;
+  height: 30px;
+
+}
 
 .proof {
 /*   top: 10px;
  */  position: relative;
+}
+.image{
+  border: solid 1px grey;
+  border-radius: 8px;
+   margin-left: 120px; 
+  height: 68px;
+  width: 68px;
+}
+#ocultar{
+  border: none;
+}
+#ocultar:focus{
+  outline: none;
 }

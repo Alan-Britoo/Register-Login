@@ -111,3 +111,35 @@
     margin-bottom: 3%;
 
 }
+
+body {
+    transition: background-color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+.modo-noche {
+    background-color: #2a2a2a; /* Color de fondo para el modo nocturno */
+    color: #ffffff; /* Color del texto para el modo nocturno */
+}
+
+.modo-noche .pri{
+    color: #ffffff; /* Color del texto para el modo nocturno */
+}
+
+.boton-flotante {
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2D9CDB; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(122, 122, 122);
+}
+
+.boton-flotante:hover {
+    background-color: #2980b9; /* Color de fondo del botón al pasar el ratón sobre él */
+}

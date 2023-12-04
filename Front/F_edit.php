@@ -15,11 +15,12 @@ if (isset($_SESSION["array"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/edit.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-<div class="navbar-logo">
+    <div class="navbar-logo">
         <img src="../MP_N3-master/assets/devchallenges.svg" alt="icono de arriba">
 
         <a id="prueba" href="#" class="logout-icon">
@@ -54,21 +55,29 @@ if (isset($_SESSION["array"])) {
     </div>
 
 
-    <form action="../Backend/edit.php" method="POST">
+    <form action="../Backend/edit.php" method="POST" enctype="multipart/form-data">
         <div class="container">
             <div class="info">
                 <h3>Change Info</h3>
                 <p>lo que diga aqyi</p>
             </div>
             <div class="img-conte">
-                <div class="img">
-                    <img src="" alt="IMAGEN">
+                <label class="img">
+                    <?php if ($arrayP['photo'] != ''): ?>
+                        <img class="fotooo" src="<?php echo $arrayP['photo'] ?>" alt="IMAGEN">
+                    <?php endif; ?>
+                    <span class="material-symbols-outlined iconCamara centrar"> photo_camera </span>
+                </label>
+                <div class="changePhoto">
+                    <label class="changeTittle">
+                        <span class="textFoto">CHANGE FOTO</span>
+                        <input type="file" name="foto" id="foto" class="subirFoto">
+                    </label>
                 </div>
-                <p>CHANGE PHOTO</p>
             </div>
             <div class="data">
                 <label for="">Name</label>
-                <input  name="name"type="text" class="name" placeholder="Enter you bio" required>
+                <input name="name" type="text" class="name" placeholder="Enter you bio" required>
 
                 <label for="">Bio</label>
                 <input name="bio" type="text" class="bio" placeholder="Enter you bio" required>
@@ -80,13 +89,16 @@ if (isset($_SESSION["array"])) {
                 <input name="email" type="email" class="email" placeholder="<?php echo $arrayP['email'] ?>" required>
 
                 <label for="">Password</label>
-                <input name="contrasena" type="password" class="password" placeholder="<?php echo $arrayP['contrasena'] ?>" required>
+                <input name="contrasena" type="password" class="password"
+                    placeholder="<?php echo $arrayP['contrasena'] ?>" required>
 
                 <button>Save</button>
             </div>
         </div>
     </form>
     <script src="../js.js"></script>
+
+    <input type="file" ><span class="material-symbols-outlined iconCamara centrar"> photo_camera </span>
 </body>
 
 </html>

@@ -7,7 +7,7 @@ if (isset($_SESSION['array'])) {
 } else {
     header('location: ../Front/F_login.php');
 }
-if ($_SERVER['REQUEST_METHOD'] === 'POST'/*  && isset($_FILES['foto']) */) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST'  && isset($_FILES['foto']) ) {
     $correo = $_POST['email'];
     $name = $_POST['name'];
     $bio = $_POST['bio'];
@@ -15,17 +15,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'/*  && isset($_FILES['foto']) */) {
     $password = $_POST['contrasena'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
     
-/* $base_url= '../Photos';
+$base_url= '../Photos/';
 $tmp = $_FILES ['foto']['tmp_name'];
 $imgName= $_FILES['foto']['name'];
 $ext = pathinfo($imgName, PATHINFO_EXTENSION);
 $url=$base_url . "profile_$usuario.".$ext;
-move_uploaded_file($tmp, $url); */
+move_uploaded_file($tmp, $url); 
 
-    $query = "UPDATE usuarios SET `email`=?,`contrasena`=?,`name`=?, `bio`=?, `phone`=? WHERE id =? ";
+    $query = "UPDATE usuarios SET `email`=?,`contrasena`=?,`photo`=? ,`name`=?, `bio`=?, `phone`=? WHERE id =? ";
      
     $cone = $pdo->prepare($query);
-    $resultt = $cone->execute([$correo, $hash,/* $url */ $name, $bio, $phone, $usuario]);
+    $resultt = $cone->execute([$correo, $hash, $url,  $name, $bio, $phone, $usuario]);
 
     if ($resultt) {
         $querySelect = "SELECT * FROM usuarios WHERE id = ?";

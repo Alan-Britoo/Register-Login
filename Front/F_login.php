@@ -55,6 +55,8 @@ if (isset($_SESSION["array"])) {
         <p>devChallenges.io</p>
     </div>
 
+    <button class="boton-flotante" >🌙</button>
+    <script src="../js2.js"></script>
 </body>
 
 </html>

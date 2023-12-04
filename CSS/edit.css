@@ -50,6 +50,12 @@ letter-spacing: -0.035em;
     border: 1px solid #2F80ED;
 }
 
+.centrar{
+    padding-left: 25px;
+    padding-top: 23px;
+    
+}
+
 .data button {
     width: 82px;
     height: 38px;
@@ -82,6 +88,11 @@ letter-spacing: -0.035em;
     height: 72px;
     border-radius: 8px;
     border: solid 1px;
+}
+.fotooo{
+    border-radius: 8px;
+    height: 72px;
+    width: 72px;
 }
 
 .img-conte {

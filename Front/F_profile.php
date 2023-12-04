@@ -15,7 +15,8 @@ if (isset($_SESSION['array'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/profile.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -27,9 +28,17 @@ if (isset($_SESSION['array'])) {
             <nav class="ms-5 mt-3 d-flex  justify-content-between">
 
                 <div class="me-5 mt-3 dropdown">
-                    <button class="buttonToggle" id="buttonToggle">nombre:
-                        <?php echo $arrayP['name'] ?>
+                    <button class="buttonToggle" id="buttonToggle">
+                        <?php if ($arrayP['photo'] != ''): ?>
+                            <img class="fotooo" src="<?php echo $arrayP['photo'] ?>" alt="IMAGEN" ?>
+                            <p><?php echo $arrayP['name'] ?></p>
+                            
+                        <?php endif; ?>
+                        <span >
+                                <img src="../MP_N3-master/assets/flecha.png" alt="">
+                            </span>
                     </button>
+
                     <ul class="menuToggle" id="menuToggle">
                         <div class="proof">
                             <li class="limenu"><span class="material-symbols-outlined icons">person
@@ -70,8 +79,12 @@ if (isset($_SESSION['array'])) {
 
                 <div class="profile_pic">
                     <p>PHOTO</p>
-                    <p class="prue">holaaaaaaaa</p>
-
+                    <p class="prue pruee" >
+                        <!-- <p class="pruee" >Profile Photo</p> -->
+                        <?php if ($arrayP['photo'] != ''): ?>
+                        </p>
+                        <img class="image" src="<?php echo $arrayP['photo'] ?>" alt="fotoPerfil">
+                    <?php endif; ?>
                 </div>
 
                 <div class="profile_info">
@@ -107,9 +120,10 @@ if (isset($_SESSION['array'])) {
 
                 <div class="last">
                     <p>PASSWORD</p>
-                    <p class="prue">
-                        <?php echo $arrayP['contrasena'] ?>
-                    </p>
+                    <input  type="password" class="prue" id="ocultar" value="<?php echo $arrayP['contrasena'] ?>" readonly>
+                        
+                        </input>
+                    
                 </div>
             </div>
 
